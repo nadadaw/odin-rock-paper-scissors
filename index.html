@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock Paper Scissors - Play Online </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="myscript.js"></script>
+    <div class="container">
+    <h1> Rock Paper Scissors Game </h1>
+
+    <div class="options">
+    <button id="rock"><img alt="Rock" src="/images/rock.png" height="175px" width="175px"/></button>
+    <button id="paper"><img alt="Paper" src="/images/paper.png" height="175px" width="175px"/></button>
+    <button id="scissors"><img alt="Scissors" src="/images/scissors.png" height="175px" width="175px"/></button>
+    </div>
+
+    <div id="results">
+        <div id="message">First to five points wins. Make your move!</div>
+        <div id="score-board"><strong>Score-Board</strong> ~ YOU: <span id="player-score">0</span> COMPUTER: <span id="computer-score">0</span></div> 
+        <div id="winner-announcement"></div>
+        <button id="refresh-button">Restart</button>
+    </div>
+
+    </div>
 </body>
 </html>
